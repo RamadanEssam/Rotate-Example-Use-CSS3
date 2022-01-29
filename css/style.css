@@ -1,0 +1,84 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poiret One', cursive;
+
+    background-color: #313131;
+}
+.container
+{
+    width: 90%;
+    margin:50px auto;
+}
+
+.member
+{
+    border: solid 3px #fff;
+    background-color: #09c;
+    width: 25%;
+    float: left;
+    position: relative;
+    color: #Fff;
+    text-align: center;
+    overflow: hidden;
+  
+}
+.member img
+{
+    width: 100%;
+    transition: transform 1s 1s;
+}
+.member-caption
+{
+    background-color: rgba(42,63,85,0.7);
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s , transform 1s;
+   
+}
+.member:hover .member-caption
+{
+   opacity: 1;
+   transform: rotate(360deg);
+}
+.member:hover img 
+{
+    transform: scale(1.2,1.2);
+}
+.member h2
+{
+    background-color: #2A3F55;
+    padding: 10px;
+    position: relative;
+    left: 120%;
+    transition: left 1s 2s;
+}
+.member:hover h2
+{
+
+    left: 0;
+}
+.member-caption p
+{
+    padding: 15px;
+    font-size: 20px;
+    position: relative;
+    left: 120%;
+    transition: left 1s 2.5s;
+
+}
+.member:hover p
+{
+
+    left: 0;
+}
